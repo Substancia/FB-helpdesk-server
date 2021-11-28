@@ -3,6 +3,8 @@ Module for connecting to MongoDB and returning database object.
 */
 
 const { MongoClient } = require('mongodb');
+const dotenv = require('dotenv');
+dotenv.config();
 const URL = process.env.ATLAS_URI;
 const dbname = 'Richpanel';
 
